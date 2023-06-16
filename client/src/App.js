@@ -63,8 +63,11 @@ function App() {
   return (
     <div className="App">
       <div className="top-bar">
-        <h1 className="title">Schedule Assistant</h1>
-        <div className="trademark">&#8482;</div>
+        <div className="title-wrapper">
+          <h1 className="title">Schedule Assistant</h1>
+          <span className="how-to-use">How to Use</span>
+        </div>
+        <span className="trademark">&#8482;</span>
       </div>
       <div className="information">
         <label>First Name: </label>

@@ -25,10 +25,22 @@ body {
   /* Set text color to white for better contrast */
 }
 
+.title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .title {
   color: white;
   margin-left: 25px;
 }
+
+.how-to-use {
+  font-size: 14px;
+  color: white;
+  margin-left: 50px;
+}
+
 
 .trademark {
   font-size: 12px;
