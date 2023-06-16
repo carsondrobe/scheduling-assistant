@@ -62,7 +62,10 @@ function App() {
 
   return (
     <div className="App">
-      <div className="top-bar"></div>
+      <div className="top-bar">
+        <h1 className="title">Schedule Assistant</h1>
+        <div className="trademark">&#8482;</div>
+      </div>
       <div className="information">
         <label>First Name: </label>
         <input
