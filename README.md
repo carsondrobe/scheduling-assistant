@@ -11,7 +11,7 @@ Schedule Assistant is a web application that helps you manage employee schedules
 
 1. Clone the repository:
 
-git clone https://github.com/carsondrobe/schedule_assistant.git
+   git clone https://github.com/carsondrobe/schedule_assistant.git
 
 2. Install the dependencies:
 
