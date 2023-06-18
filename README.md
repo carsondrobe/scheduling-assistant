@@ -1,6 +1,6 @@
 # Schedule Assistant
 
-Schedule Assistant is a web application that helps you manage employee schedules and assignments. It provides a user-friendly interface to add employees, update their shifts, and view employee information. This tool is designed to assist in scheduling tasks and facilitate efficient management of employee resources.
+Schedule Assistant is a web application that helps you manage employee preferences and assignments. It provides a user-friendly interface to add employees, update their shifts, and view employee information. This tool is designed to assist in scheduling tasks and facilitate efficient management of employee resources.
 
 ## Prerequisites
 
