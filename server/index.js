@@ -36,9 +36,17 @@ app.post('/create', (req, res) => {
 });
 
 app.get("/employees", (req, res) => {
-    db.query("SELECT * FROM Employees", (err, result) => {
+    const filterPosition = req.query.position;
+    let query = "SELECT * FROM Employees";
+
+    if (filterPosition) {
+        query += ` WHERE position = '${filterPosition}'`;
+    }
+
+    db.query(query, (err, result) => {
         if (err) {
             console.log(err);
+            res.status(500).send("Error retrieving employees");
         } else {
             res.send(result);
         }

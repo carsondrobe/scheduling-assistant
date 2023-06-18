@@ -12,6 +12,7 @@ function App() {
 
   const [employeeList, setEmployeeList] = useState([]);
   const [isViewingEmployees, setIsViewingEmployees] = useState(false);
+  const [filterPosition, setFilterPosition] = useState(""); // New state for filter
 
   const addEmployee = () => {
     Axios.post("http://localhost:3001/create", {
@@ -37,12 +38,17 @@ function App() {
       setIsViewingEmployees(false);
       setEmployeeList([]);
     } else {
-      Axios.get("http://localhost:3001/employees").then((response) => {
+      let url = "http://localhost:3001/employees";
+      if (filterPosition !== "") {
+        url += `?position=${filterPosition}`;
+      }
+
+      Axios.get(url).then((response) => {
         setEmployeeList(response.data);
         setIsViewingEmployees(true);
       });
     }
-  }
+  };
 
   const updateEmployeeShifts = (id) => {
     Axios.put("http://localhost:3001/update", { shifts: newShifts, id: id }).then((response) => {
@@ -113,6 +119,22 @@ function App() {
       </div>
       <br />
       <div className='employees'>
+        <label>Filter by Position:</label>
+        <select
+          value={filterPosition}
+          onChange={(event) => {
+            setFilterPosition(event.target.value);
+          }}
+        >
+          <option value="">All Positions</option>
+          <option value="Manager">Manager</option>
+          <option value="Supervisor">Supervisor</option>
+          <option value="Top">Top</option>
+          <option value="End">End</option>
+          <option value="Concession">Concession</option>
+          <option value="Bus">Bus</option>
+        </select>
+
         <button onClick={toggleViewEmployees}>
           {isViewingEmployees ? "Close" : "View All Employees"}
         </button>
