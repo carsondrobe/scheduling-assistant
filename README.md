@@ -15,8 +15,8 @@ Schedule Assistant is a web application that helps you manage employee schedules
 
 2. Install the dependencies:
 
-cd schedule_assistant
-npm install
+   cd schedule_assistant
+   npm install
 
 
 3. Set up the database:
@@ -29,7 +29,7 @@ npm install
 
 5. Start the server:
 
-node index.js
+   node index.js
 
 
 6. Open the web application:
@@ -75,7 +75,7 @@ The database schema consists of a single table named `Employees` with the follow
 - `shifts`: Number of shifts per week
 - `position`: Employee's position
 
-For a detailed overview of the database schema, refer to the `database-schema.sql` file.
+ For a detailed overview of the database schema, refer to the `database-schema.sql` file.
 
 ## Troubleshooting
 
