@@ -2,7 +2,7 @@
 
 Schedule Assistant is a web application that helps you manage employee preferences and assignments. It provides a user-friendly interface to add employees, update their shifts, and view employee information. This tool is designed to assist in scheduling tasks and facilitate efficient management of employee resources.
 <p align="center">
-  <img width="722" alt="Screenshot" src="https://github.com/carsondrobe/Scheduling_Assistant/assets/91719000/d64f6643-c5a0-4760-b5d3-bd2fe3ca2814">
+  <img width="1440" alt="Screenshot 2023-06-25 at 11 26 53 PM" src="https://github.com/carsondrobe/Scheduling_Assistant/assets/91719000/7deda89f-b717-40ff-8ce4-ad87560fc3da">
 </p>
 
 
